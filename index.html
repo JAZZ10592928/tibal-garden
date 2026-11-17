@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Menu Ala Shopee</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Ala Shopee -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">Shopee<span>Menu</span></div>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Cari menu favoritmu...">
+        <button id="searchBtn">🔍</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Kategori Filter -->
+  <div class="container">
+    <div class="category-bar">
+      <button class="cat-btn active" data-category="all">Semua Menu</button>
+      <button class="cat-btn" data-category="makanan">Makanan</button>
+      <button class="cat-btn" data-category="minuman">Minuman</button>
+      <button class="cat-btn" data-category="snack">Camilan</button>
+    </div>
+
+    <p class="hint-text">💡 Arahkan kursor atau tekan menu untuk melihat harga</p>
+
+    <!-- Grid Daftar Menu -->
+    <div class="menu-grid" id="menuGrid">
+      <!-- Item menu akan di-render otomatis oleh JavaScript -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
