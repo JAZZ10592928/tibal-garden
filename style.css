@@ -138,7 +138,6 @@ body {
   position: relative;
 }
 
-/* Efek saat diarahkan (hover) atau ditekan (active) */
 .menu-card:hover,
 .menu-card.revealed {
   transform: translateY(-3px);
@@ -146,20 +145,32 @@ body {
   box-shadow: 0 4px 12px rgba(238, 77, 45, 0.18);
 }
 
+/* Container Gambar JPEG */
 .card-img {
-  height: 160px;
-  background: #fff3f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 64px;
+  height: 180px;
+  background: #f0f0f0;
   position: relative;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover .card-img img,
+.menu-card.revealed .card-img img {
+  transform: scale(1.06);
 }
 
 .badge-star {
   position: absolute;
   top: 8px;
   left: 0;
+  z-index: 2;
   background: var(--shopee-orange);
   color: white;
   font-size: 11px;
@@ -201,7 +212,6 @@ body {
   overflow: hidden;
 }
 
-/* Tampilan sebelum ditekan/diarahkan */
 .price-placeholder {
   position: absolute;
   inset: 0;
@@ -216,7 +226,6 @@ body {
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
-/* Tampilan harga asli (tersembunyi awalnya) */
 .price-actual {
   position: absolute;
   inset: 0;
@@ -232,7 +241,6 @@ body {
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
-/* Munculkan harga saat hover atau saat class 'revealed' aktif (diklik) */
 .menu-card:hover .price-placeholder,
 .menu-card.revealed .price-placeholder {
   opacity: 0;
