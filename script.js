@@ -7,7 +7,8 @@ const menuData = [
   { id: 5, name: "Matcha Latte Creamy", category: "minuman", price: 20000, sold: "940 terjual", icon: "🍵", badge: "" },
   { id: 6, name: "Kentang Goreng Saus Keju", category: "snack", price: 12000, sold: "1,5RB terjual", icon: "🍟", badge: "Terlaris" },
   { id: 7, name: "Mie Ayam Bakso Urat Jumbo", category: "makanan", price: 22000, sold: "620 terjual", icon: "🍜", badge: "Star" },
-  { id: 8, name: "Croffle Caramel Crunchy", category: "snack", price: 17500, sold: "1,8RB terjual", icon: "🥐", badge: "Star+" }
+  { id: 8, name: "Croffle Caramel Crunchy", category: "snack", price: 17500, sold: "1,8RB terjual", icon: "🥐", badge: "Star+" },
+  { id: 9, name: "Americano", category: "minuman", price: 9000, sold: "921 terjual", icon: "👌", badge: "Star" }
 ];
 
 const menuGrid = document.getElementById("menuGrid");
