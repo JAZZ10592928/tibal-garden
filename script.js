@@ -20,11 +20,11 @@ const menuData = [
   },
   { 
     id: 3, 
-    name: "Nasi Goreng Kambing Kebon Sirih", 
+    name: "Nasi Goreng Special", 
     category: "makanan", 
-    price: 28000, 
-    sold: "850 terjual", 
-    image: "images/nasi-goreng.jpeg", 
+    price: 17000, 
+    sold: "860 terjual", 
+    image: "Nasi-Goreng.jpeg", 
     badge: "Star" 
   },
   { 
@@ -84,7 +84,7 @@ const menuData = [
    { 
     id: 10, 
     name: "Tiraminsu", 
-    category: "makanan", 
+    category: "snack", 
     price: 21000, 
     sold: "1,3RB terjual", 
     image: "Tiraminsu.jpeg", 
@@ -93,7 +93,7 @@ const menuData = [
    { 
     id: 11, 
     name: "Apple pie", 
-    category: "makanan", 
+    category: "snack", 
     price: 24000, 
     sold: "1,4RB terjual", 
     image: "Apple-pie.jpeg", 
@@ -120,7 +120,7 @@ const menuData = [
    { 
     id: 14, 
     name: "Cinnamon Roll", 
-    category: "makanan", 
+    category: "snack", 
     price: 10000, 
     sold: "911 terjual", 
     image: "Cinnamon-Roll.jpeg", 
