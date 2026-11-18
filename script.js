@@ -78,7 +78,7 @@ const menuData = [
     category: "minuman", 
     price: 9000, 
     sold: "932 terjual", 
-    image: "images/mie-ayam.jpeg", 
+    image: "Americano.jpeg", 
     badge: "Star" 
   },
 ];
