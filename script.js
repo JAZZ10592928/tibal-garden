@@ -51,7 +51,7 @@ const menuData = [
     category: "snack", 
     price: 12000, 
     sold: "1,5RB terjual", 
-    image: "images/kentang-goreng.jpeg", 
+    image: "kentang-goreng-sauskeju.jpeg", 
     badge: "Terlaris" 
   },
   { 
