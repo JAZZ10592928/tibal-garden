@@ -71,7 +71,16 @@ const menuData = [
     sold: "1,8RB terjual", 
     image: "images/croffle.jpeg", 
     badge: "Star+" 
-  }
+  },
+  { 
+    id: 9, 
+    name: "Americano", 
+    category: "minuman", 
+    price: 9000, 
+    sold: "932 terjual", 
+    image: "images/mie-ayam.jpeg", 
+    badge: "Star" 
+  },
 ];
 
 const menuGrid = document.getElementById("menuGrid");
