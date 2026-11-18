@@ -2,12 +2,12 @@
 const menuData = [
   { 
     id: 1, 
-    name: "Ayam Geprek Sambal Matah Spesial", 
-    category: "makanan", 
-    price: 18000, 
-    sold: "1,2RB terjual", 
-    image: "images/ayam-geprek.jpeg", 
-    badge: "Star+" 
+    name: "V60", 
+    category: "minuman", 
+    price: 9000, 
+    sold: "819 terjual", 
+    image: "V60.jpeg", 
+    badge: "Star" 
   },
   { 
     id: 2, 
@@ -43,7 +43,7 @@ const menuData = [
     price: 20000, 
     sold: "940 terjual", 
     image: "images/matcha-latte.jpeg", 
-    badge: "" 
+    badge: "Star" 
   },
   { 
     id: 6, 
@@ -80,6 +80,78 @@ const menuData = [
     sold: "932 terjual", 
     image: "Americano.jpeg", 
     badge: "Star" 
+  },
+   { 
+    id: 10, 
+    name: "Tiraminsu", 
+    category: "makanan", 
+    price: 21000, 
+    sold: "1,3RB terjual", 
+    image: "Tiraminsu.jpeg", 
+    badge: "Star+" 
+  },
+   { 
+    id: 11, 
+    name: "Apple pie", 
+    category: "makanan", 
+    price: 24000, 
+    sold: "1,4RB terjual", 
+    image: "Apple-pie.jpeg", 
+    badge: "Star+" 
+  },
+   { 
+    id:12, 
+    name: "Fruit tea", 
+    category: "minuman", 
+    price: 7000, 
+    sold: "922 terjual", 
+    image: "Fruit-Tea.jpeg", 
+    badge: "Star" 
+  },
+   { 
+    id: 13, 
+    name: "Green Tea", 
+    category: "minuman", 
+    price: 10000, 
+    sold: "1,2 terjual", 
+    image: "Green-Tea.jpeg", 
+    badge: "Star+" 
+  },
+   { 
+    id: 14, 
+    name: "Cinnamon Roll", 
+    category: "makanan", 
+    price: 10000, 
+    sold: "911 terjual", 
+    image: "Cinnamon-Roll.jpeg", 
+    badge: "Star" 
+  },
+   { 
+    id: 15, 
+    name: "Hot Chocolate", 
+    category: "minuman", 
+    price: 12000, 
+    sold: "1,1 terjual", 
+    image: "Hot-Chocolate.jpeg", 
+    badge: "Star+" 
+  },
+   { 
+    id: 16, 
+    name: "Latte", 
+    category: "minuman", 
+    price: 11000, 
+    sold: "1.0 terjual", 
+    image: "Latte.jpeg", 
+    badge: "Star+" 
+  },
+   { 
+    id: 17, 
+    name: "Cappucino", 
+    category: "minuman", 
+    price: 12000, 
+    sold: "1.4 terjual", 
+    image: "Cappucino.jpeg", 
+    badge: "Star+" 
   },
 ];
 
