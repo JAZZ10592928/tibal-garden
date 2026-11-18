@@ -1,14 +1,77 @@
-// Data Menu
+// Data Menu dengan path gambar .jpeg
 const menuData = [
-  { id: 1, name: "Ayam Geprek Sambal Matah Spesial", category: "makanan", price: 18000, sold: "1,2RB terjual", icon: "🍗", badge: "Star+" },
-  { id: 2, name: "Es Kopi Susu Gula Aren", category: "minuman", price: 15000, sold: "3,4RB terjual", icon: "🧋", badge: "Terlaris" },
-  { id: 3, name: "Nasi Goreng Kambing Kebon Sirih", category: "makanan", price: 28000, sold: "850 terjual", icon: "🍛", badge: "Star" },
-  { id: 4, name: "Dimsum Ayam Udang (Isi 4)", category: "snack", price: 14000, sold: "2,1RB terjual", icon: "🥟", badge: "Star+" },
-  { id: 5, name: "Matcha Latte Creamy", category: "minuman", price: 20000, sold: "940 terjual", icon: "🍵", badge: "" },
-  { id: 6, name: "Kentang Goreng Saus Keju", category: "snack", price: 12000, sold: "1,5RB terjual", icon: "kentang-goreng-sauskeju.jpeg", badge: "Terlaris" },
-  { id: 7, name: "Mie Ayam Bakso Urat Jumbo", category: "makanan", price: 22000, sold: "620 terjual", icon: "🍜", badge: "Star" },
-  { id: 8, name: "Croffle Caramel Crunchy", category: "snack", price: 17500, sold: "1,8RB terjual", icon: "🥐", badge: "Star+" },
-  { id: 9, name: "Americano", category: "minuman", price: 9000, sold: "921 terjual", icon: "👌", badge: "Star" }
+  { 
+    id: 1, 
+    name: "Ayam Geprek Sambal Matah Spesial", 
+    category: "makanan", 
+    price: 18000, 
+    sold: "1,2RB terjual", 
+    image: "images/ayam-geprek.jpeg", 
+    badge: "Star+" 
+  },
+  { 
+    id: 2, 
+    name: "Es Kopi Susu Gula Aren", 
+    category: "minuman", 
+    price: 15000, 
+    sold: "3,4RB terjual", 
+    image: "images/kopi-susu.jpeg", 
+    badge: "Terlaris" 
+  },
+  { 
+    id: 3, 
+    name: "Nasi Goreng Kambing Kebon Sirih", 
+    category: "makanan", 
+    price: 28000, 
+    sold: "850 terjual", 
+    image: "images/nasi-goreng.jpeg", 
+    badge: "Star" 
+  },
+  { 
+    id: 4, 
+    name: "Dimsum Ayam Udang (Isi 4)", 
+    category: "snack", 
+    price: 14000, 
+    sold: "2,1RB terjual", 
+    image: "images/dimsum.jpeg", 
+    badge: "Star+" 
+  },
+  { 
+    id: 5, 
+    name: "Matcha Latte Creamy", 
+    category: "minuman", 
+    price: 20000, 
+    sold: "940 terjual", 
+    image: "images/matcha-latte.jpeg", 
+    badge: "" 
+  },
+  { 
+    id: 6, 
+    name: "Kentang Goreng Saus Keju", 
+    category: "snack", 
+    price: 12000, 
+    sold: "1,5RB terjual", 
+    image: "images/kentang-goreng.jpeg", 
+    badge: "Terlaris" 
+  },
+  { 
+    id: 7, 
+    name: "Mie Ayam Bakso Urat Jumbo", 
+    category: "makanan", 
+    price: 22000, 
+    sold: "620 terjual", 
+    image: "images/mie-ayam.jpeg", 
+    badge: "Star" 
+  },
+  { 
+    id: 8, 
+    name: "Croffle Caramel Crunchy", 
+    category: "snack", 
+    price: 17500, 
+    sold: "1,8RB terjual", 
+    image: "images/croffle.jpeg", 
+    badge: "Star+" 
+  }
 ];
 
 const menuGrid = document.getElementById("menuGrid");
@@ -45,7 +108,7 @@ function renderMenus() {
     card.innerHTML = `
       <div class="card-img">
         ${item.badge ? `<span class="badge-star">${item.badge}</span>` : ""}
-        <span>${item.icon}</span>
+        <img src="${item.image}" alt="${item.name}" loading="lazy">
       </div>
       <div class="card-body">
         <div>
@@ -59,7 +122,7 @@ function renderMenus() {
       </div>
     `;
 
-    // Event saat kartu ditekan (klik/tap di HP) untuk mengunci tampilan harga
+    // Event saat kartu ditekan (klik/tap di HP) untuk memunculkan/menyembunyikan harga
     card.addEventListener("click", () => {
       card.classList.toggle("revealed");
     });
