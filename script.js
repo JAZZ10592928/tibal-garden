@@ -67,7 +67,7 @@ const menuData = [
     id: 8, 
     name: "Croffle Caramel Crunchy", 
     category: "snack", 
-    price: 17500, 
+    price: 19000, 
     sold: "1,8RB terjual", 
     image: "images/croffle.jpeg", 
     badge: "Star+" 
