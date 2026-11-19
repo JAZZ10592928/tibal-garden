@@ -140,7 +140,7 @@ const menuData = [
     name: "Latte", 
     category: "minuman", 
     price: 11000, 
-    sold: "1.0RB terjual", 
+    sold: "2.3RB terjual", 
     image: "Latte.jpeg", 
     badge: "Star+" 
   },
