@@ -113,7 +113,7 @@ const menuData = [
     name: "Green Tea", 
     category: "minuman", 
     price: 10000, 
-    sold: "1,2 terjual", 
+    sold: "1,2RB terjual", 
     image: "Green-Tea.jpeg", 
     badge: "Star+" 
   },
@@ -131,7 +131,7 @@ const menuData = [
     name: "Hot Chocolate", 
     category: "minuman", 
     price: 12000, 
-    sold: "1,1 terjual", 
+    sold: "1,1RB terjual", 
     image: "Hot-Chocolate.jpeg", 
     badge: "Star+" 
   },
@@ -140,7 +140,7 @@ const menuData = [
     name: "Latte", 
     category: "minuman", 
     price: 11000, 
-    sold: "1.0 terjual", 
+    sold: "1.0RB terjual", 
     image: "Latte.jpeg", 
     badge: "Star+" 
   },
@@ -149,7 +149,7 @@ const menuData = [
     name: "Cappucino", 
     category: "minuman", 
     price: 12000, 
-    sold: "1.4 terjual", 
+    sold: "1.4RB terjual", 
     image: "Cappucino.jpeg", 
     badge: "Star+" 
   },
