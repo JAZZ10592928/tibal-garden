@@ -1,9 +1,13 @@
 :root {
-  --shopee-orange: #ee4d2d;
-  --shopee-orange-dark: #d73211;
-  --shopee-bg: #f5f5f5;
-  --text-dark: #222222;
-  --text-muted: #757575;
+  --green-primary: #2d6a4f;
+  --green-dark: #1b4332;
+  --green-soft: #e9f5ef;
+  --brown-primary: #6f4e37;
+  --brown-dark: #4a3222;
+  --brown-soft: #f5ebe0;
+  --bg-cream: #faf7f2;
+  --text-dark: #2c221e;
+  --text-muted: #7a6a63;
 }
 
 * {
@@ -11,28 +15,29 @@
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  background-color: var(--shopee-bg);
+  background-color: var(--bg-cream);
   color: var(--text-dark);
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 16px;
 }
 
-/* Navbar */
+/* Navbar (Gradasi Hijau Hutan) */
 .navbar {
-  background: linear-gradient(180deg, #f53d2d, #f63);
-  padding: 16px 0;
+  background: linear-gradient(135deg, var(--green-dark), var(--green-primary));
+  padding: 14px 0;
   color: white;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(44, 34, 30, 0.15);
 }
 
 .nav-content {
@@ -46,14 +51,15 @@ body {
   font-size: 24px;
   font-weight: 800;
   letter-spacing: -0.5px;
+  white-space: nowrap;
 }
 
 .logo span {
-  font-weight: 400;
-  font-size: 18px;
-  background: white;
-  color: var(--shopee-orange);
-  padding: 2px 6px;
+  font-weight: 600;
+  font-size: 16px;
+  background: var(--brown-soft);
+  color: var(--brown-dark);
+  padding: 2px 8px;
   border-radius: 4px;
   margin-left: 4px;
 }
@@ -63,8 +69,9 @@ body {
   max-width: 600px;
   display: flex;
   background: white;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .search-bar input {
@@ -73,15 +80,22 @@ body {
   padding: 8px 12px;
   outline: none;
   font-size: 14px;
+  color: var(--text-dark);
+  min-width: 0;
 }
 
 .search-bar button {
-  background: var(--shopee-orange);
+  background: var(--brown-primary);
   border: none;
   color: white;
   padding: 0 18px;
-  border-radius: 3px;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-bar button:hover {
+  background: var(--brown-dark);
 }
 
 /* Kategori */
@@ -90,24 +104,36 @@ body {
   gap: 10px;
   margin: 20px 0 12px;
   overflow-x: auto;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
+  scrollbar-width: none;
+}
+
+.category-bar::-webkit-scrollbar {
+  display: none;
 }
 
 .cat-btn {
   background: white;
-  border: 1px solid #e0e0e0;
-  padding: 8px 16px;
+  border: 1px solid #dfd3c3;
+  color: var(--brown-dark);
+  padding: 8px 18px;
   border-radius: 20px;
   cursor: pointer;
   font-size: 14px;
+  font-weight: 500;
   white-space: nowrap;
   transition: all 0.2s;
 }
 
-.cat-btn.active, .cat-btn:hover {
-  background: var(--shopee-orange);
+.cat-btn:hover {
+  border-color: var(--green-primary);
+  color: var(--green-primary);
+}
+
+.cat-btn.active {
+  background: var(--green-primary);
   color: white;
-  border-color: var(--shopee-orange);
+  border-color: var(--green-primary);
 }
 
 .hint-text {
@@ -116,21 +142,21 @@ body {
   margin-bottom: 14px;
 }
 
-/* Grid Menu */
+/* Grid Menu Default (Laptop / Desktop >= 992px: 5 Kolom) */
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
   padding-bottom: 40px;
 }
 
 /* Kartu Produk / Menu */
 .menu-card {
   background: white;
-  border-radius: 4px;
+  border-radius: 6px;
   overflow: hidden;
-  border: 1px solid transparent;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  border: 1px solid #ece3d8;
+  box-shadow: 0 2px 5px rgba(74, 50, 34, 0.06);
   cursor: pointer;
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   display: flex;
@@ -141,14 +167,14 @@ body {
 .menu-card:hover,
 .menu-card.revealed {
   transform: translateY(-3px);
-  border-color: var(--shopee-orange);
-  box-shadow: 0 4px 12px rgba(238, 77, 45, 0.18);
+  border-color: var(--green-primary);
+  box-shadow: 0 6px 14px rgba(45, 106, 79, 0.16);
 }
 
 /* Container Gambar JPEG */
 .card-img {
-  height: 180px;
-  background: #f0f0f0;
+  height: 185px;
+  background: var(--brown-soft);
   position: relative;
   overflow: hidden;
 }
@@ -166,22 +192,24 @@ body {
   transform: scale(1.06);
 }
 
+/* Badge Coklat Hangat */
 .badge-star {
   position: absolute;
   top: 8px;
   left: 0;
   z-index: 2;
-  background: var(--shopee-orange);
-  color: white;
+  background: var(--brown-primary);
+  color: #fff;
   font-size: 11px;
-  font-weight: bold;
-  padding: 2px 6px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .card-body {
-  padding: 10px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -190,8 +218,10 @@ body {
 
 .menu-title {
   font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark);
   line-height: 1.35;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -207,29 +237,33 @@ body {
 /* Container Harga & Placeholder */
 .price-box {
   position: relative;
-  height: 34px;
-  border-radius: 4px;
+  height: 36px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
+/* Tampilan sebelum ditekan/diarahkan (Nuansa Coklat Lembut) */
 .price-placeholder {
   position: absolute;
   inset: 0;
-  background: #fff0ed;
-  border: 1px dashed var(--shopee-orange);
-  color: var(--shopee-orange);
+  background: var(--brown-soft);
+  border: 1px dashed var(--brown-primary);
+  color: var(--brown-dark);
   font-size: 12px;
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding: 0 6px;
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
+/* Tampilan harga asli saat muncul (Hijau Utama) */
 .price-actual {
   position: absolute;
   inset: 0;
-  background: var(--shopee-orange);
+  background: var(--green-primary);
   color: white;
   font-size: 15px;
   font-weight: 700;
@@ -251,4 +285,105 @@ body {
 .menu-card.revealed .price-actual {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* =========================================
+   RESPONSIVE BREAKPOINTS
+   ========================================= */
+
+/* 1. Tampilan Tablet (601px - 991px: 3 Kolom) */
+@media (max-width: 991px) {
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .card-img {
+    height: 175px;
+  }
+}
+
+/* 2. Tampilan Handphone (<= 600px: 2 Kolom ala Aplikasi Shopee) */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .nav-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .search-bar {
+    max-width: 100%;
+  }
+
+  .search-bar input {
+    padding: 7px 10px;
+    font-size: 13px;
+  }
+
+  .search-bar button {
+    padding: 0 14px;
+  }
+
+  .category-bar {
+    margin: 14px 0 8px;
+    gap: 8px;
+  }
+
+  .cat-btn {
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+
+  .hint-text {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding-bottom: 28px;
+  }
+
+  .card-img {
+    height: 140px;
+  }
+
+  .card-body {
+    padding: 8px;
+  }
+
+  .menu-title {
+    font-size: 13px;
+  }
+
+  .meta-info {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .price-box {
+    height: 32px;
+  }
+
+  .price-placeholder {
+    font-size: 11px;
+  }
+
+  .price-actual {
+    font-size: 14px;
+  }
 }
