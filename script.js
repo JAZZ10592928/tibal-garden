@@ -29,7 +29,7 @@ const menuData = [
   },
   { 
     id: 4, 
-    name: "Dimsum Ayam Udang (Isi 4)", 
+    name: "Dimsum Ayam Udang (Isi 5)", 
     category: "snack", 
     price: 14000, 
     sold: "2,1RB terjual", 
