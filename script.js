@@ -153,6 +153,33 @@ const menuData = [
     image: "Cappucino.jpeg", 
     badge: "Star+" 
   },
+   { 
+    id: 18, 
+    name: "Spageti Bolognese", 
+    category: "makanan", 
+    price: 24000, 
+    sold: "921 terjual", 
+    image: "Spageti.jpeg", 
+    badge: "Star" 
+  },
+   { 
+    id: 19, 
+    name: "Beef Steak", 
+    category: "makanan", 
+    price: 30000, 
+    sold: "1.1RB terjual", 
+    image: "Beef-Steak.jpeg", 
+    badge: "Star+" 
+  },
+    { 
+    id: 20, 
+    name: "Chiken Steak", 
+    category: "makanan", 
+    price: 27000, 
+    sold: "1.4RB terjual", 
+    image: "Beef-Steak.jpeg", 
+    badge: "Star+" 
+  },
 ];
 
 const menuGrid = document.getElementById("menuGrid");
