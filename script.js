@@ -15,7 +15,7 @@ const menuData = [
     category: "minuman", 
     price: 15000, 
     sold: "3,4RB terjual", 
-    image: "images/kopi-susu.jpeg", 
+    image: "kopi-susu.jpeg", 
     badge: "Terlaris" 
   },
   { 
@@ -33,7 +33,7 @@ const menuData = [
     category: "snack", 
     price: 14000, 
     sold: "2,1RB terjual", 
-    image: "images/dimsum.jpeg", 
+    image: "Dimsum.jpeg", 
     badge: "Star+" 
   },
   { 
@@ -42,7 +42,7 @@ const menuData = [
     category: "minuman", 
     price: 20000, 
     sold: "940 terjual", 
-    image: "images/matcha-latte.jpeg", 
+    image: "Matcha.jpeg", 
     badge: "Star" 
   },
   { 
@@ -60,7 +60,7 @@ const menuData = [
     category: "makanan", 
     price: 22000, 
     sold: "620 terjual", 
-    image: "images/mie-ayam.jpeg", 
+    image: "Mie-ayam.jpeg", 
     badge: "Star" 
   },
   { 
@@ -69,7 +69,7 @@ const menuData = [
     category: "snack", 
     price: 19000, 
     sold: "1,8RB terjual", 
-    image: "images/croffle.jpeg", 
+    image: "Croffle.jpeg", 
     badge: "Star+" 
   },
   { 
