@@ -180,6 +180,33 @@ const menuData = [
     image: "Beef-Steak.jpeg", 
     badge: "Star+" 
   },
+    { 
+    id: 21, 
+    name: "Onion Ring", 
+    category: "snack", 
+    price: 10000, 
+    sold: "827 terjual", 
+    image: "Onion.jpeg", 
+    badge: "Star" 
+  },
+  { 
+    id: 22, 
+    name: "Roti Bakar", 
+    category: "snack", 
+    price: 12000, 
+    sold: "843 terjual", 
+    image: "Roti-Bakar.jpeg", 
+    badge: "Star" 
+  },
+  { 
+    id: 23, 
+    name: "Mix Platters", 
+    category: "snack", 
+    price: 20000, 
+    sold: "881 terjual", 
+    image: "Mix.jpeg", 
+    badge: "Star" 
+  },
 ];
 
 const menuGrid = document.getElementById("menuGrid");
