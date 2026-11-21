@@ -24,7 +24,7 @@ const menuData = [
     category: "makanan", 
     price: 17000, 
     sold: "860 terjual", 
-    image: "Nasi-Goreng.jpeg", 
+    image: "Nasi.jpeg", 
     badge: "Star" 
   },
   { 
@@ -83,7 +83,7 @@ const menuData = [
   },
    { 
     id: 10, 
-    name: "Tiraminsu", 
+    name: "Tiramisu", 
     category: "snack", 
     price: 21000, 
     sold: "1,3RB terjual", 
@@ -177,7 +177,7 @@ const menuData = [
     category: "makanan", 
     price: 27000, 
     sold: "1.4RB terjual", 
-    image: "Beef-Steak.jpeg", 
+    image: "Chiken-Steak.jpeg", 
     badge: "Star+" 
   },
     { 
